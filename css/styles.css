@@ -1,0 +1,380 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Raleway Webfont";
+}
+
+ .text-left {
+   text-align: left;
+ }
+
+.text-center {
+  text-align: center;
+}
+
+ .text-right {
+   text-align: right;
+ }
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-extra-bold {
+  font-weight: 900;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.w50p {
+  width: 50%;
+}
+
+.w100p {
+  width: 100%;
+}
+
+.h100p {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+BODY {
+  padding-top: 131px;
+}
+
+HEADER {
+  display: block;
+  width: 100%;
+  height: 130px;
+  background-color: #053c6a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+HEADER .wrapper {
+  width: 72%;
+  margin: 0 auto;
+  position: relative;
+}
+
+HEADER .wrapper .logo {
+  width: 110px;
+  height: 110px;
+  top: 10px;
+  position: absolute;
+}
+
+HEADER .wrapper .our-lawyers {
+  position: absolute;
+  right: 130px;
+  width: 200px;
+  height: 28px;
+  border: 1px solid #ffffff;
+  top: 49px;
+}
+
+HEADER .wrapper .our-lawyers A {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding-top: 6px;
+  font: bold 16px/16px 'Open Sans Condensed';
+}
+
+HEADER .wrapper .burger-menu {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  width: 109px;
+  height: 109px;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease .3s;
+  z-index: 2;
+}
+
+HEADER .wrapper .burger-menu #menu-switcher {
+  display: none;
+}
+
+HEADER .wrapper .burger-menu NAV.nav-holder {
+  position: fixed;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding: 130px 0 0;
+  z-index: -1;
+}
+
+HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner {
+  background: #15558b;
+  height: 100%;
+  overflow-y: auto;
+}
+
+HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner .menu LI {
+
+}
+
+HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner .menu A {
+  color: #ffffff;
+  font-family: 'Open Sans Condensed';
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0 15px 25px;
+  text-transform: uppercase;
+}
+
+HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner .menu A:hover {
+  background-color: #053c6a;
+}
+
+HEADER .wrapper .burger-menu LABEL {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+HEADER .wrapper .burger-menu LABEL SPAN {
+  display: block;
+  position: absolute;
+  top: 52px;
+  left: 28px;
+  right: 28px;
+  height: 4px;
+  background: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+HEADER .wrapper .burger-menu LABEL SPAN::after,
+HEADER .wrapper .burger-menu LABEL SPAN::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+HEADER .wrapper .burger-menu LABEL SPAN::before {
+  top: -10px;
+}
+
+HEADER .wrapper .burger-menu LABEL SPAN::after {
+  bottom: -10px;
+}
+
+HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN {
+  background: 0 0;
+}
+
+HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL {
+  background-color: #15558b;
+}
+
+HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:before {
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  background: #fff;
+}
+
+HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  background: #fff;
+}
+
+/*.home-slider .swiper-container .swiper-slide {
+  width: 100%;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}*/
+
+.home-slider .swiper-container .swiper-slide IMG {
+  max-width: 100%;
+}
+
+.home-slider .swiper-container .swiper-slide .slogan {
+  position: absolute;
+  color: #4b4b48;
+  font-family: 'Open Sans Condensed';
+  font-weight: bold;
+  font-size: 24px;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 10%;
+  text-transform: uppercase;
+}
+
+.categories {
+  width: 75%;
+  margin: 10% auto 6%;
+}
+
+.categories .category {
+  width: 23%;
+  padding-top: 23%;
+  margin: 0 0.9% 1.7%;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  display: block;
+}
+
+.categories .category:hover .description {
+  bottom: -50%;
+}
+
+.categories .category .description {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50%;
+  background-color: rgba(5, 60, 106, 0.5);
+  font-family: 'Glegoo';
+  line-height: 26px;
+  transition: all 0.3s ease-out;
+}
+
+.categories .category .description H1 {
+  margin: 44px 0 14px;
+}
+
+.categories .category IMG {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+FOOTER {
+  display: block;
+  width: 100%;
+  background-color: #053c6a;
+}
+
+FOOTER .contacts {
+  padding: 60px;
+}
+
+FOOTER P {
+  font-family: 'Glegoo';
+  line-height: 26px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.color-magenda {
+  color: #ff00ff;
+}
+
+.title {
+  font-family: 'Open Sans Condensed';
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title-large {
+  font-size: 32px;
+}
+
+.title-medium {
+  font-size: 24px;
+}
+
+.title-small {
+  font-size: 21px;
+}
+
+.with-arrow {
+  position: relative;
+  text-indent: 25px;
+}
+
+.with-arrow::before {
+  content: '';
+  width: 20px;
+  display: block;
+  position: absolute;
+  height: 20px;
+  top: 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/arrow.png);
+  background-position: center center;
+}
+
+FOOTER H2 {
+  padding-bottom: 8px;
+}
+
+FOOTER .columns {
+  display: inline-block;
+}
+
+FOOTER .columns .column {
+  margin: 0 50px;
+  text-align: left;
+}
+
+FOOTER .copyright {
+  width: 75%;
+  margin: 0 auto;
+  padding: 40px 0;
+  border-top: 1px solid #ffffff;
+  margin-top: 40px;
+}
+
+FOOTER .copyright P {
+  font-weight: 100;
+  font-size: 12px;
+}
