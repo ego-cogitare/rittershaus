@@ -126,7 +126,7 @@ HEADER .wrapper .burger-menu NAV.nav-holder {
   height: 100%;
   left: 100%;
   top: 0;
-  width: 50%;
+  width: 500px;
   color: #fff;
   text-align: center;
   -webkit-transition: all .3s ease;
@@ -238,8 +238,16 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   background-size: cover;
 }*/
 
+.home-slider .swiper-container LI.swiper-slide {
+  height: 600px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .home-slider .swiper-container .swiper-slide IMG {
   max-width: 100%;
+  width: 100%;
 }
 
 .home-slider .swiper-container .swiper-slide .slogan {
@@ -311,7 +319,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 .accordion-wrapper {
   background-color: #eceff2;
   min-height: 20px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .content-wrapper .sitebar {
@@ -375,6 +383,9 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   user-select: none;
   text-indent: 25px;
   position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .accordion-wrapper .content .accordion-item .accordion-title:before {
@@ -529,4 +540,129 @@ FOOTER .copyright {
 FOOTER .copyright P {
   font-weight: 100;
   font-size: 12px;
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1679px) {
+  BODY {
+    padding-top: 101px;
+  }
+  HEADER {
+    height: 100px;
+  }
+  HEADER .wrapper .burger-menu {
+    top: 5px;
+    width: 89px;
+    height: 89px;
+  }
+  HEADER .wrapper .burger-menu LABEL SPAN {
+    top: 43px;
+    left: 23px;
+    right: 23px;
+  }
+  HEADER .wrapper .burger-menu NAV.nav-holder {
+    padding: 100px 0 0;
+  }
+  HEADER .wrapper .our-lawyers {
+    top: 35px;
+  }
+  .home-slider .swiper-container LI.swiper-slide {
+    height: 520px;
+  }
+  .content-wrapper .content .page-content {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  BODY {
+    padding-top: 91px;
+  }
+  HEADER {
+    height: 90px;
+  }
+  HEADER .wrapper {
+    width: 100%;
+  }
+  HEADER .wrapper .burger-menu {
+    top: 5px;
+    right: 5px;
+    width: 80px;
+    height: 80px;
+  }
+  HEADER .wrapper .burger-menu LABEL SPAN {
+    top: 38px;
+    left: 20px;
+    right: 20px;
+  }
+  HEADER .wrapper .burger-menu NAV.nav-holder {
+    padding: 90px 0 0;
+  }
+  .home-slider .swiper-container LI.swiper-slide {
+    height: 450px;
+  }
+  FOOTER P {
+    font-size: 14px;
+  }
+  FOOTER .columns .column {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  BODY {
+    padding-top: 81px;
+  }
+  HEADER {
+    height: 80px;
+  }
+  HEADER .wrapper {
+    width: 100%;
+  }
+  HEADER .wrapper .burger-menu {
+    top: 5px;
+    right: 5px;
+    width: 70px;
+    height: 70px;
+  }
+  HEADER .wrapper .burger-menu LABEL SPAN {
+    top: 33px;
+    left: 14px;
+    right: 14px;
+  }
+  HEADER .wrapper .burger-menu NAV.nav-holder {
+    padding: 80px 0 0;
+  }
+  .home-slider .swiper-container LI.swiper-slide {
+    height: 430px;
+  }
+  .content-wrapper .content .page-content {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .content-wrapper .content .page-title {
+    padding-top: 20px;
+  }
+  .content-wrapper .content .page-content {
+    padding-top: 20px;
+  }
+  .accordion-wrapper .content {
+    width: 100%;
+  }
+  FOOTER .columns .column {
+    float: none;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .with-arrow {
+    text-indent: 0px;
+  }
+  .with-arrow::before {
+    display: inline-block;
+    position: static;
+    vertical-align: middle;
+  }
+  FOOTER P.separator {
+    display: none;
+  }
 }
