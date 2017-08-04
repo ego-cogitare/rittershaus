@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f5f5;
+  /*background-color: #f5f5f5;*/
   font-family: "Raleway Webfont";
 }
 
@@ -311,19 +311,61 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 .accordion-wrapper {
   background-color: #eceff2;
   min-height: 20px;
-  margin-top: 50px;
-  padding: 50px 0;
+  padding: 10px;
 }
 
 .content-wrapper .sitebar {
   width: 30%;
 }
 
+.content-wrapper .sitebar .contacts-wrapper {
+  width: 150px;
+  border: 1px solid #4f4f4f;
+  padding: 30px 50px 30px 10px;
+  margin-top: 185px;
+}
+
+.content-wrapper .sitebar IMG {
+  width: 90%;
+  margin-top: 140px;
+  border: 1px solid #4f4f4f;
+}
+
+.content-wrapper .sitebar .contacts-wrapper IMG {
+  border: none;
+  margin-top: 0;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.content-wrapper .sitebar .wrapper {
+  margin-right: 30px;
+}
+
+.content-wrapper .sitebar UL {
+  color: #ff00ff;
+  margin-top: 20px;
+}
+
+.content-wrapper .sitebar UL LI {
+  font-size: 12px;
+  letter-spacing: -0.5px;
+  padding: 5px 0;
+}
+
+.content-wrapper .sitebar BLOCKQUOTE {
+  font-family: 'Open Sans Condensed';
+  font-style: italic;
+  width: 200px;
+  line-height: 26px;
+  margin-top: 50px;
+}
+
 .content-wrapper .content {
   width: 70%;
 }
 
-.content-wrapper .content .accordion-item .accordion-title {
+.accordion-wrapper .content .accordion-item .accordion-title {
   cursor: pointer;
   font-size: 21px;
   font-weight: bold;
@@ -335,7 +377,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   position: relative;
 }
 
-.content-wrapper .content .accordion-item .accordion-title:before {
+.accordion-wrapper .content .accordion-item .accordion-title:before {
   content: '';
   display: block;
   width: 20px;
@@ -346,27 +388,41 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   transition: all .5s ease;
 }
 
-.content-wrapper .content .accordion-item.opened .accordion-title:before {
+.accordion-wrapper.opened {
+  margin-bottom: 1px;
+}
+
+.accordion-wrapper.first-item {
+  padding-top: 50px;
+}
+
+.accordion-wrapper.last-item {
+  padding-bottom: 50px;
+}
+
+.accordion-wrapper.opened .content .accordion-item .accordion-title:before {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
 }
 
-.content-wrapper .content .accordion-item .accordion-title:hover {
+.accordion-wrapper .content .accordion-item .accordion-title:hover {
   color: #ff00ff;
 }
 
-.content-wrapper .content .accordion-item .accordion-title:hover:before {
+.accordion-wrapper .content .accordion-item .accordion-title:hover:before {
   background-size: 21px;
   background-image: url('../img/arrow-accordion-active.png');
 }
 
-.content-wrapper .content .accordion-item {
+.accordion-wrapper .content .accordion-item {
 }
 
-.content-wrapper .content .accordion-item .accordion-content {
+.accordion-wrapper .content .accordion-item .accordion-content {
   display: none;
   padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 36px;
 }
 
 .content-wrapper .content .page-title {
@@ -386,6 +442,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   font-size: 21px;
   line-height: 41px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 /* Lawyer page */
 
