@@ -331,13 +331,34 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-indent: 30px;
+  text-indent: 25px;
+  position: relative;
+}
+
+.content-wrapper .content .accordion-item .accordion-title:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
   background: url('../img/arrow-accordion.png') no-repeat left center;
   background-size: 20px;
+  position: absolute;
+  transition: all .5s ease;
+}
+
+.content-wrapper .content .accordion-item.opened .accordion-title:before {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
 }
 
 .content-wrapper .content .accordion-item .accordion-title:hover {
   color: #ff00ff;
+}
+
+.content-wrapper .content .accordion-item .accordion-title:hover:before {
+  background-size: 21px;
+  background-image: url('../img/arrow-accordion-active.png');
 }
 
 .content-wrapper .content .accordion-item {
