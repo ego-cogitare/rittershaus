@@ -24,4 +24,8 @@ $(document).ready(function() {
       $nav.css({ left: $burger.offset().left });
     }
   });
+  
+  $('.accordion-title').on('click', function() {
+    $(this).next().slideToggle().closest('.accordion-item').toggleClass('opened');
+  });
 });
