@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,7 +9,8 @@
     <link type="text/css" href="css/fonts.css" rel="stylesheet" media="all" />
     <link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
     <script src="js/swiper.min.js"></script>
-    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -48,7 +48,7 @@
                 </li>
               </ul>
             </div>
-          </nam>
+          </nav>
         </div>
       </div>
     </header>
@@ -111,35 +111,5 @@
   			<p>© RITTERSHAUS Rechtsanwälte Partnerschaftsgesellschaft mbB</p>
       </div>
     </footer>
-
-    <script>
-      var slider = new Swiper('.swiper-container', {
-          direction: 'horizontal',
-          slidesPerView: 1,
-          pagination: '.swiper-pagination',
-          paginationClickable: true,
-          autoplay: 4000,
-          loop: true,
-          spaceBetween: 0,
-          mousewheelControl: false,
-          speed: 1000
-        });
-
-        $(document).ready(function() {
-          var $burger = $('LABEL[for="menu-switcher"]')
-            , $switcher = $('#menu-switcher')
-            , $nav = $('.nav-holder');
-
-          $switcher.on('click', function() {
-              $nav.css({ left: $(this).is(':checked')
-                ? $burger.offset().left : '100%' });
-          });
-          $(window).bind('resize', function() {
-            if ($switcher.is(':checked')) {
-              $nav.css({ left: $burger.offset().left });
-            }
-          });
-        });
-    </script>
   </body>
 </html>
