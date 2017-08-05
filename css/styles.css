@@ -70,15 +70,20 @@ HEADER {
 
 HEADER .wrapper {
   width: 72%;
+  height: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 HEADER .wrapper .logo {
   width: 110px;
-  height: 110px;
-  top: 10px;
+  height: 100%;
+  top: 0;
   position: absolute;
+}
+
+HEADER .wrapper .logo A {
+
 }
 
 HEADER .wrapper .our-lawyers {
@@ -625,6 +630,12 @@ FOOTER .copyright P {
     width: 70px;
     height: 70px;
   }
+  HEADER .wrapper .our-lawyers {
+    width: auto;
+    padding: 0 10px;
+    top: 26px;
+    right: 80px;
+  }
   HEADER .wrapper .burger-menu LABEL SPAN {
     top: 33px;
     left: 14px;
@@ -635,6 +646,18 @@ FOOTER .copyright P {
   }
   .home-slider .swiper-container LI.swiper-slide {
     height: 430px;
+  }
+  .home-slider .swiper-container .swiper-slide .slogan {
+    bottom: 41px;
+    top: auto;
+    transform: none;
+    font-size: 16px;
+    right: 0;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    width: calc(100% - 20px);
+    left: 0;
+    text-align: center;
   }
   .content-wrapper .content .page-content {
     font-size: 14px;
