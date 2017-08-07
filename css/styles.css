@@ -471,7 +471,6 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 
 .content-wrapper .content .page-content .lawyers-list .lawyer {
   display: inline-block;
-  position: relative;
   color: #ffffff;
   width: 165px;
   height: 165px;
@@ -479,7 +478,15 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   margin-right: 9px;
 }
 
-.content-wrapper .content .page-content .lawyers-list .lawyer IMG {
+.content-wrapper .content .page-content .lawyers-list .lawyer A {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrapper .content .page-content .lawyers-list .lawyer A IMG {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -487,7 +494,11 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   top: 0;
 }
 
-.content-wrapper .content .page-content .lawyers-list .lawyer SPAN.lawyer-name {
+.content-wrapper .content .page-content .lawyers-list .lawyer A:hover SPAN.lawyer-name {
+  top: 100%;
+}
+
+.content-wrapper .content .page-content .lawyers-list .lawyer A SPAN.lawyer-name {
   position: absolute;
   left: 0;
   top: 0;
@@ -501,6 +512,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   text-align: center;
   line-height: 20px;
   font-size: 14px;
+  transition: all 0.3s ease-out;
 }
 /* Lawyer page */
 
