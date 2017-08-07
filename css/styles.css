@@ -281,6 +281,11 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   display: block;
 }
 
+.categories .category.empty {
+  background-color: #053c6a;
+  display: none;
+}
+
 .categories .category:hover .description {
   bottom: -50%;
 }
@@ -377,6 +382,10 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   width: 70%;
 }
 
+/*.content-wrapper .sitebar + .content {
+  width: 70%;
+}*/
+
 .accordion-wrapper .content .accordion-item .accordion-title {
   cursor: pointer;
   font-size: 21px;
@@ -458,6 +467,40 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   line-height: 41px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.content-wrapper .content .page-content .lawyers-list .lawyer {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  width: 165px;
+  height: 165px;
+  padding: 0;
+  margin-right: 9px;
+}
+
+.content-wrapper .content .page-content .lawyers-list .lawyer IMG {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.content-wrapper .content .page-content .lawyers-list .lawyer SPAN.lawyer-name {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 90%;
+  height: 50%;
+  padding: 50% 5% 0 5%;
+  z-index: 1;
+  color: #ffffff;
+  background-color: rgba(5, 60, 106, 0.5);
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
 }
 /* Lawyer page */
 
@@ -589,6 +632,15 @@ FOOTER .copyright P {
     width: 31%;
     padding-top: 31%;
   }
+  .categories .category.empty:nth-child(3n) {
+    display: block;
+  }
+  .content-wrapper .content {
+    width: 100%;
+  }
+  .content-wrapper .sitebar + .content {
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -624,6 +676,12 @@ FOOTER .copyright P {
   .categories .category {
     width: 48%;
     padding-top: 48%;
+  }
+  .content-wrapper .content {
+    width: 100%;
+  }
+  .content-wrapper .sitebar + .content {
+    width: 70%;
   }
   FOOTER P {
     font-size: 14px;
@@ -706,19 +764,20 @@ FOOTER .copyright P {
   .content-wrapper .content .page-title {
     padding-top: 20px;
   }
+  .lawyers .content-wrapper .content .page-title {
+    text-align: center;
+  }
   .content-wrapper .content .page-content {
     padding-top: 20px;
+  }
+  .content-wrapper .content .page-content .lawyers-list {
+    text-align: center;
   }
   .accordion-wrapper .content {
     width: 100%;
   }
   .accordion-wrapper .content .accordion-item .accordion-content {
     line-height: 30px;
-  }
-  FOOTER .columns .column {
-    float: none;
-    text-align: center;
-    padding-bottom: 30px;
   }
   .with-arrow {
     text-indent: 0px;
@@ -727,6 +786,11 @@ FOOTER .copyright P {
     display: inline-block;
     position: static;
     vertical-align: middle;
+  }
+  FOOTER .columns .column {
+    float: none;
+    text-align: center;
+    padding-bottom: 30px;
   }
   FOOTER P.separator {
     display: none;
