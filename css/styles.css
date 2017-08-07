@@ -53,6 +53,17 @@ body {
   display: none !important;
 }
 
+.btn {
+  color: #4b4b48;
+  background: none;
+  border: 1px solid #4b4b48;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 8px;
+  min-width: 180px;
+  text-align: center;
+}
+
 BODY {
   padding-top: 131px;
 }
@@ -379,12 +390,12 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 }
 
 .content-wrapper .content {
-  width: 70%;
+  width: 100%;
 }
 
-/*.content-wrapper .sitebar + .content {
+.content-wrapper .sitebar + .content {
   width: 70%;
-}*/
+}
 
 .accordion-wrapper .content .accordion-item .accordion-title {
   cursor: pointer;
@@ -514,6 +525,21 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   line-height: 20px;
   font-size: 14px;
   transition: all 0.3s ease-out;
+}
+
+.btn-list A {
+  text-decoration: none;
+  text-transform: uppercase;
+  font: bold 16px/16px 'Open Sans Condensed';
+  margin-right: 40px;
+}
+
+.btn-list A:last-child {
+  margin-right: 0;
+}
+
+.btn-list A:hover {
+  color: #d47f02;
 }
 /* Lawyer page */
 
@@ -648,12 +674,6 @@ FOOTER .copyright P {
   .categories .category.empty:nth-child(3n) {
     display: block;
   }
-  .content-wrapper .content {
-    width: 100%;
-  }
-  .content-wrapper .sitebar + .content {
-    width: 70%;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -683,18 +703,16 @@ FOOTER .copyright P {
   HEADER .wrapper .burger-menu NAV.nav-holder {
     padding: 90px 0 0;
   }
+  .btn-list A {
+    min-width: 160px;
+    margin-right: 0;
+  }
   .home-slider .swiper-container LI.swiper-slide {
     height: 450px;
   }
   .categories .category {
     width: 48%;
     padding-top: 48%;
-  }
-  .content-wrapper .content {
-    width: 100%;
-  }
-  .content-wrapper .sitebar + .content {
-    width: 70%;
   }
   FOOTER P {
     font-size: 14px;
@@ -740,6 +758,11 @@ FOOTER .copyright P {
   }
   HEADER .wrapper .burger-menu NAV.nav-holder {
     padding: 80px 0 0;
+  }
+  .btn-list A {
+      display: block;
+      margin: 8px auto !important;
+      width: calc(100% - 20px);
   }
   .categories .category {
     width: 100%;
