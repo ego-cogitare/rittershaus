@@ -271,10 +271,32 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   font-family: 'Open Sans Condensed';
   font-weight: bold;
   font-size: 24px;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
-  right: 10%;
+  left: 50%;
   text-transform: uppercase;
+}
+
+.home-slider .swiper-container .swiper-slide .slogan.right {
+  transform: translate(0, -50%);
+  left: auto;
+  right: 8%;
+}
+
+.home-slider .swiper-container .swiper-slide .slogan.left {
+  transform: translate(0, -50%);
+  left: 8%;
+  right: auto;
+}
+
+.home-slider .swiper-container .swiper-slide .slogan.top {
+  top: 20%;
+  bottom: auto;
+}
+
+.home-slider .swiper-container .swiper-slide .slogan.bottom {
+  top: auto;
+  bottom: 10%;
 }
 
 .categories {
@@ -776,11 +798,11 @@ FOOTER .copyright P {
     top: auto;
     transform: none;
     font-size: 16px;
-    right: 0;
+    right: 0 !important;
     background: rgba(0,0,0,0.3);
     padding: 10px;
     width: calc(100% - 20px);
-    left: 0;
+    left: 0 !important;
     text-align: center;
   }
   .content-wrapper {
