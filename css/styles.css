@@ -319,6 +319,12 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   top: 50%;
   left: 50%;
   text-transform: uppercase;
+  white-space: nowrap;
+
+  /* Remove after typo3 integration */
+  left: auto;
+  right: 8%;
+  transform: translate(0%, -50%);
 }
 
 .home-slider .swiper-container .swiper-slide .slogan.right {
