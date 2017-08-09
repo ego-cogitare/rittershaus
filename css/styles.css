@@ -822,7 +822,9 @@ FOOTER .copyright P {
     width: 100%;
   }
   HEADER .wrapper .logo {
-    left: 24px;
+    left: 14px;
+    height: 63px;
+    top: 8px;
   }
   HEADER .wrapper .burger-menu {
     top: 5px;
