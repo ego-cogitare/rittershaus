@@ -402,7 +402,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 
 /* Lawyer page */
 .content-wrapper {
-  width: 75%;
+  width: 72%;
   font-family: 'Glegoo';
   color: #4f4f4f;
   margin: 0 auto;
@@ -415,7 +415,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 }
 
 .content-wrapper .sitebar {
-  width: 30%;
+  width: 245px;
 }
 
 .content-wrapper .sitebar .contacts-wrapper {
@@ -466,7 +466,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 }
 
 .content-wrapper .sitebar + .content {
-  width: 70%;
+  width: calc(100% - 245px);
 }
 
 .accordion-wrapper .content .accordion-item .accordion-title {
@@ -750,6 +750,9 @@ FOOTER .copyright P {
   .categories .category.empty:nth-child(3n) {
     display: block;
   }
+  .content-wrapper {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -761,6 +764,9 @@ FOOTER .copyright P {
   }
   HEADER .wrapper {
     width: 100%;
+  }
+  HEADER .wrapper .logo {
+    left: 24px;
   }
   HEADER .wrapper .burger-menu {
     top: 5px;
@@ -778,6 +784,9 @@ FOOTER .copyright P {
   }
   HEADER .wrapper .burger-menu NAV.nav-holder {
     padding: 90px 0 0;
+  }
+  .content-wrapper {
+    width: 90%;
   }
   .breadcumbs {
     top: 90px;
@@ -813,8 +822,7 @@ FOOTER .copyright P {
     width: 100%;
   }
   HEADER .wrapper .logo {
-    height: 80%;
-    top: 8px;
+    left: 24px;
   }
   HEADER .wrapper .burger-menu {
     top: 5px;
@@ -875,7 +883,7 @@ FOOTER .copyright P {
     display: none;
   }
   .content-wrapper .content {
-    width: 100%;
+    width: 100% !important;
     float: none;
   }
   .content-wrapper .content .page-content {
@@ -899,6 +907,7 @@ FOOTER .copyright P {
   }
   .accordion-wrapper .content .accordion-item .accordion-content {
     line-height: 30px;
+    font-size: 14px;
   }
   .with-arrow {
     text-indent: 0px;
