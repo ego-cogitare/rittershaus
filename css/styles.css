@@ -72,7 +72,7 @@ HEADER {
   display: block;
   width: 100%;
   height: 130px;
-  background-color: #053c6a;
+  background-color: #0d406a;
   position: fixed;
   top: 0;
   left: 0;
@@ -173,7 +173,7 @@ HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner .menu A {
 }
 
 HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner .menu A:hover {
-  background-color: #053c6a;
+  background-color: #0d406a;
 }
 
 HEADER .wrapper .burger-menu LABEL {
@@ -242,7 +242,51 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   background: #fff;
 }
 
+.breadcumbs {
+  position: fixed;
+  top: 130px;
+  background-color: #15558b;
+  z-index: 9;
+  left: 14%;
+  transition: all .3s ease;
+}
 
+.breadcumbs .breadcumb {
+  display: inline-block;
+  position: relative;
+  padding: 14px 18px;
+  color: #ffffff;
+}
+
+.breadcumbs .breadcumb.active,
+.breadcumbs .breadcumb:hover {
+  color: #d47f02;
+}
+
+.breadcumbs .breadcumb:first-child:before {
+  content: '';
+}
+
+.breadcumbs .breadcumb:before {
+  position: absolute;
+  content: '|';
+  padding-right: 20px;
+  left: -2px;
+  display: block;
+  width: 2px;
+  top: 13px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: inherit;
+}
+
+.breadcumbs .breadcumb A {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  font: bold 18px/18px 'Open Sans Condensed';
+}
 
 /* Homepage */
 /*.home-slider .swiper-container .swiper-slide {
@@ -315,7 +359,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 }
 
 .categories .category.empty {
-  background-color: #053c6a;
+  background-color: #0d406a;
   display: none;
 }
 
@@ -393,7 +437,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 }
 
 .content-wrapper .sitebar UL {
-  color: #ff00ff;
+  /*color: #ff00ff;*/
   margin-top: 20px;
 }
 
@@ -432,6 +476,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 2px 0;
 }
 
 .accordion-wrapper .content .accordion-item .accordion-title:before {
@@ -463,14 +508,14 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   -moz-transform: rotate(90deg);
 }
 
-.accordion-wrapper .content .accordion-item .accordion-title:hover {
+/*.accordion-wrapper .content .accordion-item .accordion-title:hover {
   color: #ff00ff;
 }
 
 .accordion-wrapper .content .accordion-item .accordion-title:hover:before {
   background-size: 21px;
   background-image: url('../img/arrow-accordion-active.png');
-}
+}*/
 
 .accordion-wrapper .content .accordion-item {
 }
@@ -569,7 +614,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 FOOTER {
   display: block;
   width: 100%;
-  background-color: #053c6a;
+  background-color: #0d406a;
 }
 
 FOOTER .contacts {
@@ -674,6 +719,9 @@ FOOTER .copyright P {
   HEADER .wrapper .our-lawyers {
     top: 35px;
   }
+  .breadcumbs {
+    top: 100px;
+  }
   .home-slider .swiper-container LI.swiper-slide {
     height: 520px;
   }
@@ -724,6 +772,10 @@ FOOTER .copyright P {
   }
   HEADER .wrapper .burger-menu NAV.nav-holder {
     padding: 90px 0 0;
+  }
+  .breadcumbs {
+    top: 90px;
+    left: 0;
   }
   .btn-list A {
     min-width: 160px;
@@ -780,6 +832,11 @@ FOOTER .copyright P {
   }
   HEADER .wrapper .burger-menu NAV.nav-holder {
     padding: 80px 0 0;
+  }
+  .breadcumbs {
+    top: 80px;
+    left: 0;
+    display: none;
   }
   .btn-list A {
       display: block;

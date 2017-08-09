@@ -32,4 +32,10 @@ $(document).ready(function() {
   $('.accordion-title').on('click', function() {
     $(this).next().slideToggle().closest('.accordion-wrapper').toggleClass('opened');
   });
+
+  $(window).scroll(function(e) {
+    $(window).scrollTop() > $('.home-slider').height()
+      ? $('.breadcumbs').css('transform', 'translateY(-100%)')
+      : $('.breadcumbs').css('transform', 'translateY(0)');
+  });
 });
