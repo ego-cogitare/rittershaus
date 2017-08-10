@@ -540,6 +540,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   font-weight: bold;
   font-size: 40px;
   padding-top: 50px;
+  text-transform: uppercase;
 }
 
 .content-wrapper .content .page-descr {
