@@ -254,7 +254,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 .breadcumbs .breadcumb {
   display: inline-block;
   position: relative;
-  padding: 14px 18px;
+  padding: 8px 11px;
   color: #ffffff;
 }
 
@@ -271,12 +271,12 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   position: absolute;
   content: '|';
   padding-right: 20px;
-  left: -2px;
+  left: -1px;
   display: block;
   width: 2px;
-  top: 13px;
+  top: 9px;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   color: inherit;
 }
@@ -285,7 +285,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  font: bold 18px/18px 'Open Sans Condensed';
+  font: bold 14px/14px 'Open Sans Condensed';
 }
 
 /* Homepage */
@@ -552,6 +552,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   line-height: 41px;
   padding-top: 50px;
   padding-bottom: 50px;
+  text-align: justify;
 }
 
 .content-wrapper .content .page-content .lawyers-list .lawyer {
