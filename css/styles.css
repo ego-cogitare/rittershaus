@@ -496,8 +496,20 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   transition: all .5s ease;
 }
 
+.accordion-wrapper .content .accordion-item .accordion-title.no-arrow:before {
+  display: none;
+}
+
+.accordion-wrapper .content .accordion-item .accordion-title.no-arrow {
+  text-indent: 0;
+}
+
 .accordion-wrapper.opened {
   margin-bottom: 1px;
+}
+
+.accordion-wrapper .accordion-title.default-open + .accordion-content {
+  display: block !important;
 }
 
 .accordion-wrapper.first-item {
@@ -514,24 +526,13 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   -moz-transform: rotate(90deg);
 }
 
-/*.accordion-wrapper .content .accordion-item .accordion-title:hover {
-  color: #ff00ff;
-}
-
-.accordion-wrapper .content .accordion-item .accordion-title:hover:before {
-  background-size: 21px;
-  background-image: url('../img/arrow-accordion-active.png');
-}*/
-
-.accordion-wrapper .content .accordion-item {
-}
-
 .accordion-wrapper .content .accordion-item .accordion-content {
   display: none;
   padding-top: 30px;
   padding-bottom: 30px;
   line-height: 36px;
   font-size: 20px;
+  text-align: justify;
 }
 
 .content-wrapper .content .page-title {
