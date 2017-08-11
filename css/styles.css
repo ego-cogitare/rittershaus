@@ -955,6 +955,9 @@ FOOTER .copyright P {
     position: static;
     vertical-align: middle;
   }
+  .categories .category .description H1 {
+    margin-top: 25px;
+  }
   FOOTER .columns .column {
     float: none;
     text-align: center;
@@ -964,4 +967,3 @@ FOOTER .copyright P {
     display: none;
   }
 }
-
