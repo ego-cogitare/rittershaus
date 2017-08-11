@@ -414,58 +414,63 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   padding: 10px 0;
 }
 
-.content-wrapper .sitebar {
+/* Sitebar */
+.sitebar {
   width: 245px;
+  margin-left: 14%;
 }
 
-.content-wrapper .sitebar .contacts-wrapper {
+.sitebar .contacts-wrapper {
   width: 150px;
   border: 1px solid #4f4f4f;
   padding: 30px 50px 30px 10px;
   margin-top: 185px;
+  font-family: 'Glegoo';
+  color: #4f4f4f;
 }
 
-.content-wrapper .sitebar IMG {
+.sitebar IMG {
   width: 90%;
   margin-top: 140px;
   border: 1px solid #4f4f4f;
 }
 
-.content-wrapper .sitebar .contacts-wrapper IMG {
+.sitebar .contacts-wrapper IMG {
   border: none;
   margin-top: 0;
   vertical-align: middle;
   width: 16px;
 }
 
-.content-wrapper .sitebar .wrapper {
+.sitebar .wrapper {
   margin-right: 30px;
 }
 
-.content-wrapper .sitebar UL {
-  /*color: #ff00ff;*/
+.sitebar UL {
   margin-top: 20px;
 }
 
-.content-wrapper .sitebar UL LI {
+.sitebar UL LI {
   font-size: 12px;
   letter-spacing: -0.5px;
   padding: 5px 0;
 }
 
-.content-wrapper .sitebar BLOCKQUOTE {
+.sitebar BLOCKQUOTE {
   font-family: 'Open Sans Condensed';
   font-style: italic;
   width: 200px;
   line-height: 26px;
   margin-top: 50px;
 }
+/* Sitebar */
+
 
 .content-wrapper .content {
   width: 100%;
 }
 
-.content-wrapper .sitebar + .content {
+.sitebar + .content-wrapper .content {
   width: calc(100% - 245px);
 }
 
@@ -535,12 +540,25 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   text-align: justify;
 }
 
+.accordion-wrapper .content .accordion-item .accordion-content LI {
+  padding-left: 25px;
+  position: relative;
+}
+
+.accordion-wrapper .content .accordion-item .accordion-content LI:before {
+  position: absolute;
+  left: 0;
+  content: '·';
+  display: block;
+  width: 25px;
+  text-align: center;
+}
+
 .content-wrapper .content .page-title {
   font-family: 'Open Sans Condensed';
   font-weight: bold;
   font-size: 40px;
   padding-top: 50px;
-  text-transform: uppercase;
 }
 
 .content-wrapper .content .page-descr {
@@ -549,11 +567,15 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   padding-top: 14px;
 }
 
+.content-wrapper .content .page-descr:empty {
+  display: none;
+}
+
 .content-wrapper .content .page-content {
   font-size: 21px;
   line-height: 41px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: justify;
 }
 
@@ -746,6 +768,9 @@ FOOTER .copyright P {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .sitebar {
+    margin-left: 5%;
+  }
   .categories .category {
     width: 31%;
     padding-top: 31%;
@@ -787,6 +812,9 @@ FOOTER .copyright P {
   }
   HEADER .wrapper .burger-menu NAV.nav-holder {
     padding: 90px 0 0;
+  }
+  .sitebar {
+    margin-left: 5%;
   }
   .content-wrapper {
     width: 90%;
@@ -884,7 +912,7 @@ FOOTER .copyright P {
   .content-wrapper {
     width: 88%;
   }
-  .content-wrapper .sitebar {
+  .sitebar {
     display: none;
   }
   .content-wrapper .content {
