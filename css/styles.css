@@ -256,10 +256,11 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   position: relative;
   padding: 8px 11px;
   color: #ffffff;
+  font: bold 14px/14px 'Open Sans Condensed';
 }
 
 .breadcumbs .breadcumb.active,
-.breadcumbs .breadcumb:hover {
+.breadcumbs .breadcumb A:hover {
   color: #d47f02;
 }
 
@@ -274,7 +275,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   left: -1px;
   display: block;
   width: 2px;
-  top: 9px;
+  top: 7px;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -285,7 +286,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  font: bold 14px/14px 'Open Sans Condensed';
+  font: inherit;
 }
 
 /* Homepage */
