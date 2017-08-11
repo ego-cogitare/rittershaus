@@ -470,6 +470,10 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   width: 100%;
 }
 
+.content-wrapper .content .btn-list {
+  padding-top: 40px;
+}
+
 .sitebar + .content-wrapper .content {
   width: calc(100% - 245px);
 }
@@ -567,6 +571,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   padding-top: 14px;
 }
 
+.content-wrapper .content .page-title:empty,
 .content-wrapper .content .page-descr:empty {
   display: none;
 }
