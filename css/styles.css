@@ -575,7 +575,6 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   font-size: 21px;
   line-height: 41px;
   padding-top: 40px;
-  padding-bottom: 40px;
   text-align: justify;
 }
 
@@ -646,6 +645,7 @@ FOOTER {
   display: block;
   width: 100%;
   background-color: #0d406a;
+  margin-top: 40px;
 }
 
 FOOTER .contacts {
@@ -959,3 +959,4 @@ FOOTER .copyright P {
     display: none;
   }
 }
+
