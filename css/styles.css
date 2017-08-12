@@ -484,7 +484,8 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   padding-top: 40px;
 }
 
-.sitebar + .content-wrapper .content {
+/*.sitebar + .content-wrapper .content {*/
+.content-wrapper .content {
   width: calc(100% - 245px);
 }
 
@@ -523,6 +524,14 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   text-indent: 0;
 }
 
+.accordion-wrapper .content .accordion-item .accordion-title.no-arrow + .accordion-content LI {
+  padding-left: 14px;
+}
+
+.accordion-wrapper .content .accordion-item .accordion-title.no-arrow + .accordion-content LI:before {
+  left: -7px;
+}
+
 .accordion-wrapper.opened {
   margin-bottom: 1px;
 }
@@ -547,8 +556,8 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 
 .accordion-wrapper .content .accordion-item .accordion-content {
   display: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   line-height: 32px;
   font-size: 18px;
   text-align: justify;

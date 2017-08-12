@@ -36,8 +36,8 @@ $(document).ready(function() {
     $(this).next().slideToggle().closest('.accordion-wrapper').toggleClass('opened');
   });
 
-  $('.accordion-wrapper:first').css({ paddingTop: '50px', marginTop: '40px' });
-  $('.accordion-wrapper:last').css({ paddingBottom: '50px' });
+  $('.accordion-wrapper:first').css({ paddingTop: '40px', marginTop: '40px' });
+  $('.accordion-wrapper:last').css({ paddingBottom: '75px' });
 
   if ($slider.length > 1) {
     new Swiper('.swiper-container', {
@@ -53,4 +53,3 @@ $(document).ready(function() {
     });
   }
 });
-
