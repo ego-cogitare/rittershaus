@@ -321,33 +321,36 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   left: 50%;
   text-transform: uppercase;
   white-space: nowrap;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.5);
+  color: #ffffff;
 
   /* Remove after typo3 integration */
-  left: auto;
+  /*left: auto;
   right: 8%;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -50%);*/
 }
 
 .home-slider .swiper-container .swiper-slide .slogan.right {
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
   left: auto;
-  right: 8%;
+  right: 5%;
 }
 
 .home-slider .swiper-container .swiper-slide .slogan.left {
   transform: translate(0, -50%);
-  left: 8%;
+  left: 5%;
   right: auto;
 }
 
 .home-slider .swiper-container .swiper-slide .slogan.top {
-  top: 20%;
+  top: 16%;
   bottom: auto;
 }
 
 .home-slider .swiper-container .swiper-slide .slogan.bottom {
   top: auto;
-  bottom: 10%;
+  bottom: 2%;
 }
 
 .categories {
@@ -376,17 +379,23 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 
 .categories .category .description {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 10px);
   bottom: 0;
   height: 50%;
   background-color: rgba(5, 60, 106, 0.5);
   font-family: 'Glegoo';
   line-height: 26px;
   transition: all 0.3s ease-out;
+  padding: 0 5px;
+  font-size: 15px;
 }
 
 .categories .category .description H1 {
   margin: 44px 0 14px;
+  width: calc(100% - 10px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .categories .category IMG {
@@ -538,21 +547,21 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 
 .accordion-wrapper .content .accordion-item .accordion-content {
   display: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  line-height: 36px;
-  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 32px;
+  font-size: 18px;
   text-align: justify;
 }
 
 .accordion-wrapper .content .accordion-item .accordion-content LI {
-  padding-left: 25px;
+  padding-left: 40px;
   position: relative;
 }
 
 .accordion-wrapper .content .accordion-item .accordion-content LI:before {
   position: absolute;
-  left: 0;
+  left: 18px;
   content: '·';
   display: block;
   width: 25px;
@@ -579,7 +588,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 
 .content-wrapper .content .page-content {
   font-size: 21px;
-  line-height: 41px;
+  line-height: 40px;
   padding-top: 40px;
   text-align: justify;
 }
@@ -901,19 +910,20 @@ FOOTER .copyright P {
     padding-top: 100%;
   }
   .home-slider .swiper-container LI.swiper-slide {
-    height: 430px;
+    height: 200px;
   }
   .home-slider .swiper-container .swiper-slide .slogan {
-    bottom: 41px;
     top: auto;
     transform: none;
     font-size: 16px;
-    right: 0 !important;
     background: rgba(0,0,0,0.3);
     padding: 10px;
     width: calc(100% - 20px);
-    left: 0 !important;
     text-align: center;
+    bottom: 41px !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: translate(0,0) !important;
   }
   .content-wrapper {
     width: 88%;
