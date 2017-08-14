@@ -141,7 +141,6 @@ HEADER .wrapper .burger-menu NAV.nav-holder {
   height: 100%;
   left: 100%;
   top: 0;
-  width: 500px;
   color: #fff;
   text-align: center;
   -webkit-transition: all .3s ease;
@@ -156,20 +155,19 @@ HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner {
   overflow-y: auto;
 }
 
-HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner .menu LI {
-
-}
-
 HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner .menu A {
   color: #ffffff;
   font-family: 'Open Sans Condensed';
-  font-size: 30px;
+  font-size: 26px;
   text-decoration: none;
   display: block;
-  width: 100%;
+  width: calc(100% - 25px);
   height: 100%;
   padding: 15px 0 15px 25px;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 HEADER .wrapper .burger-menu NAV.nav-holder .nav-inner .menu A:hover {
@@ -556,10 +554,10 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 
 .accordion-wrapper .content .accordion-item .accordion-content {
   display: none;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  line-height: 32px;
-  font-size: 18px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 43px;
+  font-size: 21px;
   text-align: justify;
 }
 
@@ -603,12 +601,18 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 }
 
 .content-wrapper .content .page-content .lawyers-list .lawyer {
-  display: inline-block;
   color: #ffffff;
   width: 165px;
   height: 165px;
   padding: 0;
   margin-right: 9px;
+  margin-bottom: 9px;
+  float: left;
+}
+
+.content-wrapper .content .page-content .lawyers-list.text-center .lawyer {
+  display: inline-block;
+  float: none;
 }
 
 .content-wrapper .content .page-content .lawyers-list .lawyer A {
@@ -959,6 +963,10 @@ FOOTER .copyright P {
   }
   .content-wrapper .content .page-content .lawyers-list {
     text-align: center;
+  }
+  .content-wrapper .content .page-content .lawyers-list .lawyer {
+    display: inline-block;
+    float: none;
   }
   .accordion-wrapper .content {
     width: 100%;
