@@ -296,6 +296,11 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   background-size: cover;
 }*/
 
+.home-slider.rainer-dietmann .swiper-container {
+  width: 80%;
+  margin-top: 80px;
+}
+
 .home-slider .swiper-container LI.swiper-slide {
   height: 600px;
   background-size: cover;
@@ -424,15 +429,15 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 
 /* Sitebar */
 .sitebar {
-  width: 245px;
+  width: 255px;
   margin-left: 14%;
 }
 
 .sitebar .contacts-wrapper {
   width: 150px;
   border: 1px solid #4f4f4f;
-  padding: 30px 50px 30px 10px;
-  margin-top: 185px;
+  padding: 30px 50px 30px 20px;
+  margin-top: 235px;
   font-family: 'Glegoo';
   color: #4f4f4f;
 }
@@ -454,14 +459,24 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   margin-right: 30px;
 }
 
-.sitebar UL {
+.sitebar .contacts-wrapper UL {
   margin-top: 20px;
 }
 
-.sitebar UL LI {
+.sitebar .contacts-wrapper UL LI {
   font-size: 12px;
   letter-spacing: -0.5px;
   padding: 5px 0;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 3px center;
+  padding-left: 32px;
+}
+
+.sitebar .contacts-wrapper UL LI:nth-child(2),
+.sitebar .contacts-wrapper UL LI:nth-child(3){
+  background-size: 18px;
+  background-position: 1px center;
 }
 
 .sitebar BLOCKQUOTE {
@@ -484,7 +499,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
 
 /*.sitebar + .content-wrapper .content {*/
 .content-wrapper .content {
-  width: calc(100% - 245px);
+  width: calc(100% - 255px);
 }
 
 .accordion-wrapper .content .accordion-item .accordion-title {
@@ -579,7 +594,7 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   font-family: 'Open Sans Condensed';
   font-weight: bold;
   font-size: 40px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .content-wrapper .content .page-descr {
@@ -925,6 +940,10 @@ FOOTER .copyright P {
   .home-slider .swiper-container LI.swiper-slide {
     height: 200px;
     margin-bottom: 35px;
+  }
+  .home-slider.rainer-dietmann .swiper-container {
+    width: 100%;
+    margin-top: 0px;
   }
   .home-slider .swiper-container .swiper-slide .slogan {
     top: auto;
