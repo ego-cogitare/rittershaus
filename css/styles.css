@@ -334,6 +334,10 @@ HEADER .wrapper .burger-menu #menu-switcher:checked + LABEL SPAN:after {
   transform: translate(0%, -50%);*/
 }
 
+.home-slider .swiper-container .swiper-slide .slogan:empty {
+  display: none;
+}
+
 .home-slider .swiper-container .swiper-slide .slogan.right {
   transform: translateY(-50%);
   left: auto;

@@ -48,9 +48,15 @@ $(document).ready(function() {
     $(this).next().slideToggle().closest('.accordion-wrapper').toggleClass('opened');
   });
 
-  $('.accordion-wrapper:first').css({ paddingTop: '70px', marginTop: '70px' });
-  $('.accordion-wrapper:last').css({ paddingBottom: '70px' })
-    .find('.accordion-content').css({ paddingBottom: '0' });
+  $('.accordion-wrapper').each(function() {
+    if (!$(this).prev().hasClass('accordion-wrapper')) {
+      $(this).css({ paddingTop: '70px', marginTop: '70px' });
+    }
+    if (!$(this).next().hasClass('accordion-wrapper')) {
+      $(this).css({ paddingBottom: '70px' })
+        .find('.accordion-content').css({ paddingBottom: '0' });
+    }
+  });
 
   if ($slider.length > 1) {
     new Swiper('.swiper-container', {
