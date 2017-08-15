@@ -2,7 +2,9 @@
   <div class="menu-inner">
     <ul class="menu">
       <li>
-        <span class="category-title">PERSÖNLICHKEITEN</span>
+        <span class="category-title">
+          <a href="personlichkeiten.html">PERSÖNLICHKEITEN</a>
+        </span>
         <ul class="submenu">
           <li>
             <a href="#">Rechtsanwälte</a>

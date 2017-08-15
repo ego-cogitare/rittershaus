@@ -7,7 +7,7 @@
     <link type="text/css" href="css/reset.css" rel="stylesheet" media="all" />
     <link type="text/css" href="css/swiper.min.css" rel="stylesheet" media="all" />
     <link type="text/css" href="css/fonts.css" rel="stylesheet" media="all" />
-    <link type="text/css" href="css/styles.css" rel="stylesheet" media="all" />
+    <link type="text/css" href="css/styles.css?_=1" rel="stylesheet" media="all" />
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/main.js" defer></script>
