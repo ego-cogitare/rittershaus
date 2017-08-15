@@ -2,6 +2,10 @@ $(document).ready(function() {
   var $burger = $('LABEL[for="menu-switcher"]')
     , $switcher = $('#menu-switcher')
     , $nav = $('.nav-holder')
+    , $menu = $('.menu-holder')
+    , $menuOpen = $('LABEL[for="menu-opener"]')
+    , $menuSwitcher = $('#menu-opener')
+    , $menuClose = $('.menu-holder > .close')
     , $slider = $('.home-slider .swiper-wrapper > LI');
 
   $switcher.on('click', function() {
@@ -14,6 +18,19 @@ $(document).ready(function() {
         left: $(this).is(':checked') ? $burger.offset().left : '100%',
         width: $(window).outerWidth() - $burger.offset().left
       });
+  });
+
+  $menuOpen.on('click', function() {
+    if ($menuSwitcher.is(':checked')) {
+      $menu.fadeOut(500, function() {
+        $('BODY').removeClass('no-scroll');
+      });
+    }
+    else
+    {
+      $menu.fadeTo(500, 1);
+      $('BODY').addClass('no-scroll');
+    }
   });
 
   $(window).bind('resize', function() {
@@ -64,7 +81,7 @@ $(document).ready(function() {
       slidesPerView: 1,
       pagination: '.swiper-pagination',
       paginationClickable: true,
-      // autoplay: 4000,
+      autoplay: 4000,
       loop: true,
       spaceBetween: 0,
       mousewheelControl: false,
