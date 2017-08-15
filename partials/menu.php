@@ -8,7 +8,7 @@
             <a href="#">Rechtsanwälte</a>
           </li>
           <li>
-            <a href="#">Notare</a>
+            <a href="notare.php">Notare</a>
           </li>
           <li>
             <a href="#">Mediatoren</a>
@@ -37,7 +37,7 @@
             <a href="#">Arbeitsrecht</a>
           </li>
           <li>
-            <a href="#">Life Sciences & Pharmarecht</a>
+            <a href="life-scinces.php">Life Sciences & Pharmarecht</a>
           </li>
           <li>
             <a href="#">It-Recht & Datenschutz</a>
@@ -78,10 +78,10 @@
         <span class="category-title">INTERNATIONAL</span>
         <ul class="submenu">
           <li>
-            <a href="#">Legalink</a>
+            <a href="internationales.php">Legalink</a>
           </li>
           <li>
-            <a href="china-desk.html">China Desk</a>
+            <a href="china-desk.php">China Desk</a>
           </li>
           <li>
             <a href="#">Italien Desk</a>

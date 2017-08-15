@@ -22,7 +22,7 @@
           <a href="#">UNSERE ANWÄLTE</a>
         </div>
         <div class="burger-menu">
-          <input type="checkbox" id="menu-switcher" class="left" value="" />
+          <input type="checkbox" id="menu-opener" class="left" value="" />
           <label for="menu-opener" class="left">
             <span>&nbsp;</span>
           </label>
